@@ -22,19 +22,19 @@ This project compares various deep learning models for skin disease detection us
   - Accuracy: ~65-70%
   - Issue: Severe overfitting
   - Status: ⚠️ Not recommended
+  - **Transformer**
+  - Accuracy: ~72%
+  - Issue: Overfitting on validation data
+  - Status: ⚠️ Not recommended
 
-- **LSTM**
-  - Accuracy: **67%**
-  - Issue: Overfitting on training data
-  - Status: ⚠️ Not suitable for this task
 
 ## Conclusions
 
 Based on our experiments:
 - **YOLOv8** with transfer learning provides the best results with 90% accuracy
 - **ResNet** is a solid second choice with 77% accuracy
-- Custom CNN and LSTM models struggle with overfitting and should not be used for this task
-
+- Custom CNN and Transformer models struggle with overfitting and should not be used for this task
+- **LSTM** achieves 67% accuracy with reasonable generalization and could be used as an alternative
 ## Repository Structure
 
 - `YOLOv8/` - YOLOv8 implementation (best performing model)
